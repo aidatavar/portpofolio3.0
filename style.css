@@ -218,3 +218,72 @@ h1{
     transition: 0.5s;
 }
 
+/* PORTFOLIO */
+
+.control ul li {
+    list-style: none;
+    background-color: black;
+    padding: 5px 15px;
+    color: #ffff;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.item{
+    position: relative;
+}
+
+.item:hover{
+    -webkit-box-shadow: 6px 3px 41px -3px rgba(0,0,0,0.71);
+    -moz-box-shadow: 6px 3px 41px -3px rgba(0,0,0,0.71);
+    box-shadow: 6px 3px 41px -3px rgba(0,0,0,0.71);
+}
+
+.item span{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 40%;
+    color: black;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.item:hover span{
+    opacity: 1;
+    transition: 0.5s
+}
+
+.item::before{
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(238, 235, 230, 0.568);
+    opacity: 0;
+    position: absolute;
+}
+
+.item:hover::before{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(228, 220, 220);
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.circle:hover{
+    background-color: black;
+    color: #ffff;
+}

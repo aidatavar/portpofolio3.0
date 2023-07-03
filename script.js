@@ -1,3 +1,5 @@
+const headers = document.getElementsByClassName('title');
+
 function revealFunction() {
 
     window.sr = ScrollReveal({ duration: 1350, distance: '300px',  easing: 'ease-out'});
@@ -11,4 +13,11 @@ function revealFunction() {
 
 window.addEventListener('load', () => {
     revealFunction()
+})
+
+document.getElementById('btnSwitch').addEventListener('click',()=>{
+   document.body.classList.toggle("dark-theme")
+   document.body.classList.toggle("bg-dark")
+   headers.classList.add("text-white");
+
 })

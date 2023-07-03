@@ -18,6 +18,6 @@ window.addEventListener('load', () => {
 document.getElementById('btnSwitch').addEventListener('click',()=>{
    document.body.classList.toggle("dark-theme")
    document.body.classList.toggle("bg-dark")
-   headers.classList.add("text-white");
+   document.body.classList.toggle("text-white")
 
 })

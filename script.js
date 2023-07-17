@@ -6,7 +6,7 @@ function revealFunction() {
 
     sr.reveal('.title', {origin: 'left', reset: true});
     sr.reveal('.item', {origin: 'right', reset: true});
-    sr.reveal('.about', {origin: 'right', reset: true});
+    // sr.reveal('.about', {origin: 'right', reset: true});
     // sr.reveal('.contact', {origin: 'left', reset: true});
 
 }

@@ -1,8 +1,21 @@
+//  slide in effect
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
 
-window.addEventListener('load', () => {
-    revealFunction()
-})
+        return true
+    })
+});
+
+const hiddenElements = document.querySelectorAll('#hidden')
+hiddenElements.forEach((el) => observer.observe(el))
+
 
 document.getElementById('btnSwitch').addEventListener('click', () => {
     document.body.classList.toggle("dark-theme")
@@ -45,3 +58,4 @@ function validate() {
     }
     return (true);
 }
+

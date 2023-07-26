@@ -249,6 +249,7 @@ h1{
     border-radius: 20px;
     overflow: hidden;
     /* border: 8px solid rgb(66, 66, 66); */
+    position: relative;
 }
 
 .item-image{

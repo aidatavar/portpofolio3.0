@@ -1,23 +1,47 @@
-const headers = document.getElementsByClassName('title');
 
-function revealFunction() {
-
-    window.sr = ScrollReveal({ duration: 1350, distance: '300px',  easing: 'ease-out'});
-
-    sr.reveal('.title', {origin: 'left', reset: true});
-    sr.reveal('.item', {origin: 'right', reset: true});
-    // sr.reveal('.about', {origin: 'right', reset: true});
-    // sr.reveal('.contact', {origin: 'left', reset: true});
-
-}
 
 window.addEventListener('load', () => {
     revealFunction()
 })
 
-document.getElementById('btnSwitch').addEventListener('click',()=>{
-   document.body.classList.toggle("dark-theme")
-   document.body.classList.toggle("bg-dark")
-   document.body.classList.toggle("text-white")
+document.getElementById('btnSwitch').addEventListener('click', () => {
+    document.body.classList.toggle("dark-theme")
+    document.body.classList.toggle("bg-dark")
+    document.body.classList.toggle("text-white")
 
 })
+
+// validate form
+
+
+function validate() {
+
+    if (document.myForm.Name.value == "") {
+        alert("Please provide your name!");
+        document.myForm.Name.focus();
+        return false;
+    }
+    if (document.myForm.Subject.value == "") {
+        alert("Please provide a subject!");
+        document.myForm.Subject.focus();
+        return false;
+    }
+    if (document.myForm.Email.value == "") {
+        alert("Please provide your Email!");
+        document.myForm.EMail.focus();
+        return false;
+    }
+    if (document.myForm.Phone.value == "" || isNaN(document.myForm.Phone.value) ||
+        document.myForm.Phone.value.length != 5) {
+
+        alert("Please Provide Your Phone Number");
+        document.myForm.Phone.focus();
+        return false;
+    }
+    if (document.myForm.Message.value == "") {
+        alert("Please Enter Your Message!");
+        document.myForm.Message.focus();
+        return false;
+    }
+    return (true);
+}

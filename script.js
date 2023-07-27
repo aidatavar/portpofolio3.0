@@ -5,11 +5,8 @@ const observer = new IntersectionObserver((entries) => {
         console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-
-        }
-        return
+            observer.unobserve(entry.target); // Stop observing after it’s visible
+        } 
     })
 });
 
@@ -26,36 +23,38 @@ document.getElementById('btnSwitch').addEventListener('click', () => {
 
 // validate form
 
-
 function validate() {
-
-    if (document.myForm.Name.value == "") {
+    if (document.myForm.Name.value === "") {
         alert("Please provide your name!");
         document.myForm.Name.focus();
         return false;
     }
-    if (document.myForm.Subject.value == "") {
+    if (document.myForm.Subject.value === "") {
         alert("Please provide a subject!");
         document.myForm.Subject.focus();
         return false;
     }
-    if (document.myForm.Email.value == "") {
+    if (document.myForm.Email.value === "") {
         alert("Please provide your Email!");
-        document.myForm.EMail.focus();
+        document.myForm.Email.focus();
         return false;
     }
-    if (document.myForm.Phone.value == "" || isNaN(document.myForm.Phone.value) ||
-        document.myForm.Phone.value.length != 5) {
-
-        alert("Please Provide Your Phone Number");
+    if (document.myForm.Phone.value === "" || isNaN(document.myForm.Phone.value) || document.myForm.Phone.value.length !== 10) {
+        alert("Please provide a valid 10-digit phone number!");
         document.myForm.Phone.focus();
         return false;
     }
-    if (document.myForm.Message.value == "") {
+    if (document.myForm.Message.value === "") {
         alert("Please Enter Your Message!");
         document.myForm.Message.focus();
         return false;
     }
-    return (true);
+    return true;
 }
+
+
+
+
+
+
 

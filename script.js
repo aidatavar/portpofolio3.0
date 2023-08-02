@@ -1,6 +1,13 @@
 // Function to handle the fade-in effect
 //  slide in effect
 
+$(document).ready(function() {
+   setTimeout(function() {
+       $("#about").fadeIn(1000)
+
+   })
+})
+
 // const observer = new IntersectionObserver((entries) => {
 //     entries.forEach((entry) => {
 //         console.log("each element: ", entry)

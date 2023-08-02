@@ -352,7 +352,7 @@ h1{
 form .error {
     color: #ff0000;
   }
-  
+
 .contact .btn3{
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -387,17 +387,17 @@ footer{
          }
 }
 
-/* slide in animation */
+/* slide in animation
 .slide-in {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     /* transition: all 1s; */
-  }
   
-  .show {
+  
+  /* .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
     transition: 1s;
-  }
+  } */ 

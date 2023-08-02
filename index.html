@@ -16,11 +16,11 @@
     <!-- nav section start -->
     <nav class="navbar navbar-expand-lg fixed-top text-uppercase">
         <div class="container">
-        <a class="navbar-brand font-weight-bold" class="font-weight-bold" href="#">logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <a class="navbar-brand font-weight-bold" class="font-weight-bold" href="#">AIDA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active px-lg-4">
               <a class="nav-link px-lg-4 rounded" href="#">Home</a>
@@ -242,27 +242,30 @@
 
             <div class="row">
                 <div class="col-lg-9 mx-auto">
-                    <form  id="myForm"  method="post"action=“#” onsubmit="return validate()">
+                    <form  id="myform" name="myForm" method="post" action=“#” >
                         <div class="form-row">
                             <div class="col-lg-6">
-                                <input type="text"  id="name" name="Name"  class="form-control bg-light mb-3" placeholder="Name">
-                            </div>
-                            <div class="col-lg-6">
-                                <input type="text" name="Subject"  class="form-control bg-light mb-3" placeholder="Subject" id="subject">
-                                
-                            </div>
-                            <div class="col-lg-6">
-                                <input type="email" name="Email"  class="form-control bg-light mb-3" placeholder="Email">
+                                <input type="text"  id="name" name="name" minlength="2" class="form-control bg-light mb-3" placeholder="Name">
                               
                             </div>
                             <div class="col-lg-6">
-                                <input type="tel" name="Phone"  class="form-control bg-light mb-3" placeholder="Phone" id="phone">
+                                <input type="text" name="subject"  class="form-control bg-light mb-3" placeholder="Subject" id="subject" required>
+                               
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="email" name="email"  class="form-control bg-light mb-3" placeholder="Email" required>
+                          
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="tel" name="phone"  class="form-control bg-light mb-3" placeholder="Phone" id="phone" required>
+                                
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-lg-12">
-                                <textarea name="" id="massage" name="Message"  class="form-control bg-light" placeholder="Message" cols="30"
-                                    rows="10"></textarea>
+                                <textarea name="" id="massage" name="message"  class="form-control bg-light" placeholder="Message" cols="30"
+                                    rows="10" required></textarea>
+                              
                             </div>
                         </div>
                         <input class="btn3 m-4" type="submit" value="Submit"> 
@@ -276,11 +279,13 @@
         <p>Copy Right 2023 © By Aida All Rights Reserved</p>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
-        "></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
+    <script src="script.js"></script>
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     
     <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=o0adrwi6&n=n1.ratufa.io"></script>
 </body>

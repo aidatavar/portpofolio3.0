@@ -348,6 +348,11 @@ h1{
     color: var(--primary-color);
 }
 
+
+form .error {
+    color: #ff0000;
+  }
+  
 .contact .btn3{
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -356,6 +361,12 @@ h1{
     height: 40px;
     width: 140px;
     border-radius: 4px;
+}
+
+input.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
 }
 
 .btn3:hover{

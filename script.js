@@ -3,9 +3,10 @@
 
 $(document).ready(function() {
    setTimeout(function() {
+       $("#about").fadeOut(1000)
        $("#about").fadeIn(1000)
+   }, 2000)
 
-   })
 })
 
 // const observer = new IntersectionObserver((entries) => {
@@ -71,8 +72,13 @@ $(function() {
     });
   });
 
-document.getElementById('btnSwitch').addEventListener('click', () => {
-    document.body.classList.toggle("dark-theme");
-    document.body.classList.toggle("bg-dark");
-    document.body.classList.toggle("text-white");
-});
+
+$(document).ready(function() {
+    $('#btnSwitch').click(function() {
+        $('body').toggleClass("dark-theme")
+        $('body').toggleClass("bg-dark")
+        $('body').toggleClass("text-white")
+
+    })
+})
+

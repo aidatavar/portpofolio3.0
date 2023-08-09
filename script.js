@@ -82,3 +82,10 @@ $(document).ready(function() {
     })
 })
 
+const user = {"user":
+ {"name": "Christopher",
+  "id": 7464839,
+   "phone": "+1457938740",
+    "hobbies": ["Read", "Sing", "Dance"],
+  "lessons": [{"Name": "HTML", "ID": 1, "Name": "Javascript", "ID": 2, "Name": "API", "ID": 3}]
+    }}

@@ -4,11 +4,46 @@
     box-sizing: border-box;
 }
 
+
 body {
     background: linear-gradient(45deg, grey, black);
     font-family: arial;
     height: 100vh;
 }
+
+section{
+    margin-top: 150px;
+}
+
+.heading{
+    color: #fff;
+    margin: 50px 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.nav-link{
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color); 
+}
+
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+
 
 .container {
     max-width: 900px;
@@ -19,12 +54,6 @@ body {
     border-radius: 10px;
 }
 
-h1 {
-    color: #fff;
-    margin: 50px 0;
-    font-size: 3rem;
-    text-align: center;
-}
 
 input{
     width: 100%;

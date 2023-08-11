@@ -1,13 +1,9 @@
 // Function to handle the fade-in effect
 //  slide in effect
 
-$(document).ready(function() {
-   setTimeout(function() {
-       $("#about").fadeOut(1000)
-       $("#about").fadeIn(1000)
-   }, 2000)
-
-})
+$(document).ready(function () {
+	$("#about").fadeIn(1000).removeClass("hidden");
+});
 
 // const observer = new IntersectionObserver((entries) => {
 //     entries.forEach((entry) => {
@@ -21,71 +17,68 @@ $(document).ready(function() {
 //             entry.target.classList.add('slide-in');
 //         }
 //         return true
-        
+
 //     })
 // });
 
 // const hiddenElements = document.querySelectorAll('.slide-in')
 // hiddenElements.forEach((el) => observer.observe(el))
 
-
-
 // form validation jQuery
 // Wait for the DOM to be ready
-$(function() {
-    // Initialize form validation on the form.
-    // It has the name attribute "myForm"
-    $("form[name='myForm']").validate({
-      // Specify validation rules
-      rules: {
-        // The key name on the left side is the name attribute
-        // of an input field. Validation rules are defined
-        // on the right side
-        name: "required",
-        subject: "required",
-        email: {
-          required: true,
-          // Specify that email should be validated
-          // by the built-in "email" rule
-          email: true
-        },
-        phone: {
-            required: true,
-            phoneUs: true
-        },
-        message:"required",
+$(function () {
+	// Initialize form validation on the form.
+	// It has the name attribute "myForm"
+	$("form[name='myForm']").validate({
+		// Specify validation rules
+		rules: {
+			// The key name on the left side is the name attribute
+			// of an input field. Validation rules are defined
+			// on the right side
+			name: "required",
+			subject: "required",
+			email: {
+				required: true,
+				// Specify that email should be validated
+				// by the built-in "email" rule
+				email: true,
+			},
+			phone: {
+				required: true,
+				phoneUs: true,
+			},
+			message: "required",
+		},
+		// Specify validation error messages
+		messages: {
+			name: "Please enter your name",
+			email: "Please enter a valid email address",
+			subject: "Please provide a subject!",
+			phone: "please provide a phone number",
+			message: "Please enter your message",
+		},
+		// Make sure the form is submitted to the destination defined
+		// in the "action" attribute of the form when valid
+		submitHandler: function (form) {
+			form.submit();
+		},
+	});
+});
 
-      },
-      // Specify validation error messages
-      messages: {
-        name: "Please enter your name",
-        email: "Please enter a valid email address",
-        subject: "Please provide a subject!",
-        phone: "please provide a phone number",
-        message: "Please enter your message",
-      },
-      // Make sure the form is submitted to the destination defined
-      // in the "action" attribute of the form when valid
-      submitHandler: function(form) {
-        form.submit();
-      }
-    });
-  });
+$(document).ready(function () {
+	$("#btnSwitch").click(function () {
+		$("body").toggleClass("dark-theme");
+		$("body").toggleClass("bg-dark");
+		$("body").toggleClass("text-white");
+	});
+});
 
-
-$(document).ready(function() {
-    $('#btnSwitch').click(function() {
-        $('body').toggleClass("dark-theme")
-        $('body').toggleClass("bg-dark")
-        $('body').toggleClass("text-white")
-
-    })
-})
-
-const user = {"user":
- {"name": "Christopher",
-  "id": 7464839,
-   "phone": "+1457938740",
-    "hobbies": ["Read", "Sing", "Dance"],
-  "lessons": [{"Name": "HTML", "ID": 1, "Name": "Javascript", "ID": 2, "Name": "API", "ID": 3}]
-    }}
+const user = {
+	user: {
+		name: "Christopher",
+		id: 7464839,
+		phone: "+1457938740",
+		hobbies: ["Read", "Sing", "Dance"],
+		lessons: [{ Name: "HTML", ID: 1, Name: "Javascript", ID: 2, Name: "API", ID: 3 }],
+	},
+};

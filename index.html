@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,206 +9,226 @@
     <title>Personal Site</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
+
 <body>
     <!-- nav section start -->
     <nav class="navbar navbar-expand-lg fixed-top text-uppercase">
         <div class="container">
-        <a class="navbar-brand font-weight-bold" class="font-weight-bold" href="#">AIDA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="fa-solid fa-bars"></i></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active px-lg-4">
-              <a class="nav-link px-lg-4 rounded" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-lg-4 rounded" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-lg-4 rounded" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-lg-4 rounded" href="#contact">Contact</a>
-            </li>
-          </ul>
-          <button class="btn btn-dark shadow " id="btnSwitch">Toggle Mode</button>
+            <a class="navbar-brand font-weight-bold" class="font-weight-bold" href="#">AIDA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active px-lg-4">
+                        <a class="nav-link px-lg-4 rounded" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4 rounded" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4 rounded" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4 rounded" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-dark shadow " id="btnSwitch">Toggle Mode</button>
 
+            </div>
         </div>
-    </div>
-      </nav>
-       <!-- nav section end -->
+    </nav>
+    <!-- nav section end -->
 
-        <!-- main section start -->
-        <section class="main py-5">
-             <div class="container py-5 " >
-                 <div class="row py-5">
-                    <div class="col-lg-7 py-5">
-                        <h3  class="title">
-                            <small>Hello, I am</small><br>
-                            Aida
-                        </h3>
-                        <h6 class="pt-3">Web Developer</h6>
-                        <input type="button" value="My Work" class="bt1 mt-5 mrr-3">
-                        <input type="button" value="Hire Me" class="bt2 mt-5">
+    <!-- main section start -->
+    <section class="main py-5">
+        <div class="container py-5 ">
+            <div class="row py-5">
+                <div class="col-lg-7 py-5">
+                    <h3 class="title">
+                        <small>Hello, I am</small><br>
+                        Aida
+                    </h3>
+                    <h6 class="pt-3">Web Developer</h6>
+                    <input type="button" value="My Work" class="bt1 mt-5 mrr-3">
+                    <input type="button" value="Hire Me" class="bt2 mt-5">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about hidden" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="./img/about-image.jpeg" class="img-fluid" id="image" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h1 class="title">About Me</h1>
+                    <p class="title">WEB DEVELOPER</p>
+                    <p class="py-3">Lorem <span class="font-weight-bold">Aida Tavarez</span> ipsum dolor sit amet
+                        consectetur adipisicing elit. Doloribus dicta eos dignissimos quas odit commodi rem libero nobis
+                        corrupti impedit?</p>
+
+                    <div class="progress my-3">
+                        <div class="pro-value1">
+                            <p>HTML / CSS <span class="text-white float-right">95%</span></p>
+                        </div>
                     </div>
 
-                 </div>
-             </div>
-        </section>
-
-        <section class="about" id="about">
-            <div class="slide-in">
-            <div class="container" >
-                <div class="row">
-                    <div class="col-lg-5">
-                        <img src="./img/about-image.jpeg" class="img-fluid" id="image" alt="">
+                    <div class="progress my-3">
+                        <div class="pro-value2">
+                            <p>JAVASCRIPT<span class="text-white float-right">85%</span></p>
+                        </div>
                     </div>
-                    <div class="col-lg-7">
-                        <h1 class="title">About Me</h1>
-                        <p class="title">WEB DEVELOPER</p>
-                        <p class="py-3">Lorem <span class="font-weight-bold">Aida Tavarez</span> ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta eos dignissimos quas odit commodi rem libero nobis corrupti impedit?</p>
 
-                        <div class="progress my-3">
-                            <div class="pro-value1">
-                                <p>HTML / CSS <span class="text-white float-right">95%</span></p>
-                            </div>
+                    <div class="progress my-3">
+                        <div class="pro-value3">
+                            <p>BOOTSTRAP <span class="text-white float-right">80%</span></p>
                         </div>
-
-                        <div class="progress my-3">
-                            <div class="pro-value2">
-                                <p>JAVASCRIPT<span class="text-white float-right">85%</span></p>
-                            </div>
-                        </div>
-
-                        <div class="progress my-3">
-                            <div class="pro-value3">
-                                <p>BOOTSTRAP <span class="text-white float-right">80%</span></p>
-                            </div>
-                        </div>
-
-                        <div class="progress my-3">
-                            <div class="pro-value4">
-                                <p>MYSQL<span class="text-white float-right">30%</span></p>
-                            </div>
-                        </div>
-                        <div class="progress my-3">
-                            <div class="pro-value5">
-                                <p>GIT<span class="text-white float-right">98%</span></p>
-                            </div>
-                        </div>
-
-                       
-                        <button class="btn1 mt-5" ><a href="/resume/Aida-Tavarez.pdf">Download C.V</a>
-                            </button>
-                        <input type="button" class="btn2 mt-5" value="Contact Me">
-
                     </div>
+
+                    <div class="progress my-3">
+                        <div class="pro-value4">
+                            <p>MYSQL<span class="text-white float-right">30%</span></p>
+                        </div>
+                    </div>
+                    <div class="progress my-3">
+                        <div class="pro-value5">
+                            <p>GIT<span class="text-white float-right">98%</span></p>
+                        </div>
+                    </div>
+
+
+                    <button class="btn1 mt-5"><a href="/resume/Aida-Tavarez.pdf">Download C.V</a>
+                    </button>
+                    <input type="button" class="btn2 mt-5" value="Contact Me">
+
                 </div>
             </div>
         </div>
-        </section>
+    </section>
 
-        <section class="portfolio py-5" id="portfolio">
-            <div class="container text-center py-5">
-                <h1 class="text-center font-weight-bold pb-5 title">Portfolio</h1>
-                <div class="control">
-                    <ul>
-                        <li class="button">My Work</li>
-                    </ul>
-                </div>
-                
-                <div class="row pt-3">
-                    <div class="col-lg-4">
-                        <div class="item">
+    <section class="portfolio py-5" id="portfolio">
+        <div class="container text-center py-5">
+            <h1 class="text-center font-weight-bold pb-5 title">Portfolio</h1>
+            <div class="control">
+                <ul>
+                    <li class="button">My Work</li>
+                </ul>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-lg-4">
+                    <div class="item">
                         <img src="./img/project-img-1.png" class="item-image" alt="">
                         <div class="item-body">
                             <h1 class="item-title font-weight-bold">css flexbox photo gallery</h1>
-                            <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut eaque accusamus soluta deleniti autem.</p>
+                            <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et
+                                officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut
+                                eaque accusamus soluta deleniti autem.</p>
 
-                            <button class="item-btn1 text-decoration-none"><a href="https://codepen.io/aidatr/full/ZEqRvwM" target="_blank">Page View</a></button>
-                            <button class="item-btn2 text-decoration-none"><a href="https://codepen.io/aidatr/full/ZEqRvwM" target="_blank"></a>CodePen</a></button>
+                            <button class="item-btn1 text-decoration-none"><a
+                                    href="https://codepen.io/aidatr/full/ZEqRvwM" target="_blank">Page View</a></button>
+                            <button class="item-btn2 text-decoration-none"><a
+                                    href="https://codepen.io/aidatr/full/ZEqRvwM"
+                                    target="_blank"></a>CodePen</a></button>
                         </div>
                     </div>
-                 </div>
-
-                 
-
-               <div class="col-lg-4" id="project">
-                <div class="item">
-                    <img src="./img/project-img-2.png" class="item-image" alt="">
-                    <div class="item-body">
-                        <h1 class="item-title font-weight-bold">PROJECT</h1>
-                        <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut eaque accusamus soluta deleniti autem.</p>
-
-                        <button class="item-btn1 text-decoration-none"><a href="https://codepen.io/aidatr/full/zYmpjZx" target="_blank">Page View</a></button>
-                            <button class="item-btn2 text-decoration-none"><a href="https://codepen.io/aidatr/pen/zYmpjZx" target="_blank"></a>CodePen</a></button>
-                    </div>
-                </div>
-             </div>
-
-             <div class="col-lg-4">
-                <div class="item">
-                    <img src="./img/fill-in-imag3.avif" class="item-image" alt="">
-                    <div class="item-body">
-                        <h1 class="item-title font-weight-bold">PROJECT</h1>
-                        <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut eaque accusamus soluta deleniti autem.</p>
-
-                        <button class="item-btn1">live link</button>
-                        <button class="item-btn2">git hub</button>
-                    </div>
-                </div>
-         </div>
                 </div>
 
-                <div class="row pt-3">
-                    <div class="col-lg-4">
-                        <div class="item">
-                        <img src="./img/fill-in-imag4.jpeg" class="item-image" alt="">
+
+
+                <div class="col-lg-4" id="project">
+                    <div class="item">
+                        <img src="./img/project-img-2.png" class="item-image" alt="">
                         <div class="item-body">
                             <h1 class="item-title font-weight-bold">PROJECT</h1>
-                            <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut eaque accusamus soluta deleniti autem.</p>
+                            <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et
+                                officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut
+                                eaque accusamus soluta deleniti autem.</p>
+
+                            <button class="item-btn1 text-decoration-none"><a
+                                    href="https://codepen.io/aidatr/full/zYmpjZx" target="_blank">Page View</a></button>
+                            <button class="item-btn2 text-decoration-none"><a
+                                    href="https://codepen.io/aidatr/pen/zYmpjZx"
+                                    target="_blank"></a>CodePen</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="item">
+                        <img src="./img/fill-in-imag3.avif" class="item-image" alt="">
+                        <div class="item-body">
+                            <h1 class="item-title font-weight-bold">PROJECT</h1>
+                            <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et
+                                officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut
+                                eaque accusamus soluta deleniti autem.</p>
 
                             <button class="item-btn1">live link</button>
                             <button class="item-btn2">git hub</button>
                         </div>
                     </div>
-                 </div>
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-lg-4">
+                    <div class="item">
+                        <img src="./img/fill-in-imag4.jpeg" class="item-image" alt="">
+                        <div class="item-body">
+                            <h1 class="item-title font-weight-bold">PROJECT</h1>
+                            <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et
+                                officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut
+                                eaque accusamus soluta deleniti autem.</p>
+
+                            <button class="item-btn1">live link</button>
+                            <button class="item-btn2">git hub</button>
+                        </div>
+                    </div>
+                </div>
 
 
-                 <div class="col-lg-4">
+                <div class="col-lg-4">
                     <div class="item">
                         <img src="./img/fill-in-imag5.jpeg" class="item-image" alt="">
                         <div class="item-body">
                             <h1 class="item-title font-weight-bold">PROJECT</h1>
-                            <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut eaque accusamus soluta deleniti autem.</p>
+                            <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et
+                                officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut
+                                eaque accusamus soluta deleniti autem.</p>
 
                             <button class="item-btn1">live link</button>
                             <button class="item-btn2">git hub</button>
                         </div>
                     </div>
-             </div>
+                </div>
 
-             <div class="col-lg-4">
-                <div class="item">
-                    <img src="./img/fill-in-imag6.jpeg" class="item-image" alt="">
-                    <div class="item-body">
-                        <h1 class="item-title font-weight-bold">PROJECT</h1>
-                        <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut eaque accusamus soluta deleniti autem.</p>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <img src="./img/fill-in-imag6.jpeg" class="item-image" alt="">
+                        <div class="item-body">
+                            <h1 class="item-title font-weight-bold">PROJECT</h1>
+                            <p class="item-info ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et
+                                officia quod nulla, vel facilis ab impedit, non ad beatae quam obcaecati eos minus ut
+                                eaque accusamus soluta deleniti autem.</p>
 
-                        <button class="item-btn1">live link</button>
-                        <button class="item-btn2">git hub</button>
+                            <button class="item-btn1">live link</button>
+                            <button class="item-btn2">git hub</button>
+                        </div>
                     </div>
                 </div>
-         </div> 
-                </div>
-
             </div>
-        </section>
+
+        </div>
+    </section>
 
 
 
@@ -242,33 +263,37 @@
 
             <div class="row">
                 <div class="col-lg-9 mx-auto">
-                    <form  id="myform" name="myForm" method="post" action=“#” >
+                    <form id="myform" name="myForm" method="post" action=“#”>
                         <div class="form-row">
                             <div class="col-lg-6">
-                                <input type="text"  id="name" name="name" minlength="2" class="form-control bg-light mb-3" placeholder="Name">
-                              
+                                <input type="text" id="name" name="name" minlength="2"
+                                    class="form-control bg-light mb-3" placeholder="Name">
+
                             </div>
                             <div class="col-lg-6">
-                                <input type="text" name="subject"  class="form-control bg-light mb-3" placeholder="Subject" id="subject" required>
-                               
+                                <input type="text" name="subject" class="form-control bg-light mb-3"
+                                    placeholder="Subject" id="subject" required>
+
                             </div>
                             <div class="col-lg-6">
-                                <input type="email" name="email"  class="form-control bg-light mb-3" placeholder="Email" required>
-                          
+                                <input type="email" name="email" class="form-control bg-light mb-3" placeholder="Email"
+                                    required>
+
                             </div>
                             <div class="col-lg-6">
-                                <input type="tel" name="phone"  class="form-control bg-light mb-3" placeholder="Phone" id="phone" required>
-                                
+                                <input type="tel" name="phone" class="form-control bg-light mb-3" placeholder="Phone"
+                                    id="phone" required>
+
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-lg-12">
-                                <textarea name="" id="massage" name="message"  class="form-control bg-light" placeholder="Message" cols="30"
-                                    rows="10" required></textarea>
-                              
+                                <textarea name="" id="massage" name="message" class="form-control bg-light"
+                                    placeholder="Message" cols="30" rows="10" required></textarea>
+
                             </div>
                         </div>
-                        <input class="btn3 m-4" type="submit" value="Submit"> 
+                        <input class="btn3 m-4" type="submit" value="Submit">
                     </form>
                 </div>
             </div>
@@ -283,10 +308,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
     <script src="script.js"></script>
-    
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
     <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=o0adrwi6&n=n1.ratufa.io"></script>
 </body>
 
